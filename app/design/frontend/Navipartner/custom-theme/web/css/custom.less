@@ -1,0 +1,208 @@
+@import 'vendor/slick-theme.less';
+
+@font-face {
+    font-family: 'Cabin Regular';
+    src: local("../fonts/Cabin-Regular.ttf") format("truetype");
+    
+    font-family: 'Cabin Regular';
+    src: local("../fonts/Cabin-Bold.ttf") format("truetype");
+}
+
+//
+// Variables
+//
+
+@navipartner-blue: #0095ff;
+@color-white: #fff;
+
+
+//
+// Slick slider
+//
+
+@slick-dot-color: @navipartner-blue;
+@slick-dot-size: 35px;
+
+.slick-loading .slick-list {
+    background: @color-white url('@{slick-loader-path}/../../images/ajax-loader.gif') center center no-repeat;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 20px;
+}
+
+//
+// Debugging hints
+//
+
+.debugging-hint-template-file {
+    font-weight: 700 !important;
+}
+
+.debugging-hint-block-class {
+    color: #222222 !important;
+    font-weight: 700 !important;
+}
+
+body {
+    font-family: 'Cabin Regular', sans-serif;
+
+    .page-header {
+        box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.25);
+
+        .panel.wrapper {
+            background-color: @navipartner-blue;
+            a {
+                color: @color-white;
+            }
+            .header.panel > .header.links > li {
+                margin: 0;
+            }
+            .custom-header-panel-text {
+                color: @color-white;
+                float: left;
+            }
+        }
+
+        .nav-sections {
+            float: left;
+            margin-left: 22px;
+        }
+    }
+
+    //
+    // Above footer block
+    //
+
+    .above-footer-wrapper {
+        background-color: @navipartner-blue;
+
+        .navipartner-above-footer {
+            display: flex;
+            width: 1230px;
+            margin: 0 auto;
+    
+            .text-box {
+                display: flex;
+                align-items: center;
+                p {
+                    font-family: "Cabin Bold", sans-serif;
+                    font-size: 2.34375rem;
+                    font-weight: bold;
+                    color: @color-white;
+                    text-transform: uppercase;
+                }
+        
+                button {
+                    color: @color-white;
+                    background-color: transparent;
+                    border: 3px solid @color-white;
+                    border-radius: unset;
+                    font-family: "Cabin Bold", sans-serif;
+                    font-size: 1.4375rem;
+                    font-weight: bold;
+                    padding: 15px;
+                    margin-top: 2rem;
+                }
+            }
+
+            .image-block {
+                img {
+                    position: relative;
+                    top: -8rem;
+                } 
+            }
+    
+            .text-box,
+            .image-block {
+                width: 50%;
+            }
+        }
+    }
+
+    //
+    // Footer
+    //
+
+    .page-footer {
+        .widget {
+            margin: 0 !important;
+
+            .footer-container {
+                background-color: #0b1326;
+                color: @color-white;
+
+                a {
+                    color: @color-white;
+                    text-decoration: underline;
+                }
+
+                .footer-wrapper {
+                    width: 1230px;
+                    margin: 0 auto;
+
+                    .footer-logo {
+                        width: 100px;
+                        height: auto;
+                        margin-top: 40px;
+                    }
+
+                    .over-logo-webshop {
+                        a {
+                            text-transform: uppercase;
+                            font-family: "Cabin Bold", sans-serif;
+                            font-weight: 700;
+                            text-decoration: unset;
+                        }
+                    }
+
+                    .footer {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: space-between;
+                        padding: 40px 0;
+
+                        
+                        .footer-block {
+                            width: 25%;
+
+                            ul {
+                                list-style-type: none;
+                                padding-left: 0;
+                            }
+
+                            .credit-card-images {
+                                margin-right: 5px;
+
+                                :last-of-type {
+                                    margin-right: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//
+// Media quires
+//
+
+@media(max-width: 1230px) {
+    .footer-wrapper {
+        width: 100%;
+        margin: 0;
+
+        .footer {
+            align-items: unset;
+        }
+
+        .footer-block {
+            width: 100%
+        }
+    }
+}
