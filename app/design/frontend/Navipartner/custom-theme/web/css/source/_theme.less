@@ -3,27 +3,23 @@
 //
 
 @primary__color: #0095ff;
+@text__color: #0e1424;
+@list__color__base: @text__color;
 
-//
-//  Headings
-//
-
-@h3__font-weight: @font-weight__semibold;
-@h3__margin-top: @indent__base;
+//  Fonts
+@font-family-name__base: 'Cabin';
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
 
 //
 //  Navigation
 //  ---------------------------------------------
 
 @navigation__background: @color-white;
-@navigation-level0-item__active__color: @primary__color;
-
-@submenu-item__active__color: @navigation-level0-item__active__color;
+@submenu-item__active__color: @primary__color;
 
 //  Desktop navigation
 @navigation-desktop-level0-item__line-height: 47px;
 @submenu-desktop__font-weight: @font-weight__regular;
-@submenu-desktop-item__active__color: @navigation-level0-item__active__color;
 
 //  Default = secondary button
 @button__background: @color-gray-darken0;
@@ -43,6 +39,6 @@
 // Links
 @link__color: @primary__color;
 
-//  Fonts
-@font-family-name__base: 'Cabin';
-@font-family__base: @font-family-name__base, @font-family__sans-serif;
+// Borders
+@_border-radius: 0;
+@_border: @primary__color;
