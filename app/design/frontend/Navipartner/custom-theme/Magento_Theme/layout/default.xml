@@ -20,7 +20,7 @@
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/logo_dark.png</argument>
-                <argument name="logo_width" xsi:type="number">100</argument>
+                <argument name="logo_width" xsi:type="number">84</argument>
             </arguments>
         </referenceBlock>
         <move element="navigation.sections" destination="header-wrapper" before='minicart' />
