@@ -13,7 +13,7 @@
         width: unset;
         margin: 0;
 
-        .custom-header-panel-text {
+        .panel.wrapper {
             display: none;
         }
 
@@ -75,6 +75,10 @@
         width: unset;
         margin: 0;
 
+        .panel.wrapper {
+            display: none;
+        }
+
         .nav-sections {
             float: unset;
             margin-left: 0;
@@ -132,6 +136,10 @@
         top: 0;
         width: 100%;
 
+        .panel.wrapper {
+            display: block;
+        }
+
         .nav-sections {
             float: left;
             padding-left: 20px;
@@ -182,6 +190,11 @@
 // 1024px
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break =@screen__l) {
     .page-header {
+
+        .panel.wrapper {
+            display: block;
+        }
+
         .nav-sections {
             float: left;
             padding-left: 20px;
@@ -236,6 +249,11 @@
 // 1440px
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break =@screen__xl) {
     .page-header {
+
+        .panel.wrapper {
+            display: block;
+        }
+
         .nav-sections {
             float: left;
             padding-left: 20px;
