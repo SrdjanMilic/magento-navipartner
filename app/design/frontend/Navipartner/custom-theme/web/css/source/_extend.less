@@ -2,3 +2,120 @@
 @import '../vendor/slick-theme.less';
 @import '../responsive.less';
 @import '../styles.less';
+
+.products-grid {
+    .product-item {
+        box-shadow: 0 3px 13px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+//
+// Catalog widgets
+//
+
+.block.widget .products-grid .product-item {
+    padding: 20px;
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__s) {
+    .block.widget .block-products-list {
+        padding: 0 20px;
+    }
+
+    .block.widget .products-grid .product-item,
+    .page-layout-1column .block.widget .products-grid .product-item,
+    .page-layout-3columns .block.widget .products-grid .product-item {
+        width: 100%/2;
+    }
+
+    .page-layout-1column .block.widget .products-grid .product-item {
+        margin-left: 2%;
+        width: calc(~'(100% - 2%)/2');
+
+        &:nth-child(2n + 1) {
+            margin-left: 0;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__m) {
+    .block.widget .products-grid .product-item {
+        width: 100%/3;
+
+        .sidebar & {
+            margin-left: 0;
+            width: 100%;
+
+            .actions-secondary {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+    }
+
+    .page-layout-1column .block.widget .products-grid .product-item {
+        margin-left: 2%;
+        width: calc(~'(100% - 4%)/3');
+
+        &:nth-child(2n + 1) {
+            margin-left: 2%;
+        }
+
+        &:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+    }
+
+    .page-layout-3columns .block.widget .products-grid .product-item {
+        width: 100%/2;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum ='min') and (@break =@screen__l) {
+    .block.widget .products-grid .product-item {
+        width: 100%/4;
+    }
+
+    .page-layout-1column .block.widget .products-grid .product-item {
+        margin-left: 2%;
+        width: calc(~'(100% - 6%)/4');
+
+        &:nth-child(3n + 1) {
+            margin-left: 2%;
+        }
+
+        &:nth-child(4n + 1) {
+            margin-left: 0;
+        }
+    }
+
+    .page-layout-3columns .block.widget .products-grid .product-item {
+        width: 100%/3;
+    }
+
+    .block.widget .products-grid .product-items {
+        margin: 0;
+    }
+
+    .block.widget .products-grid .product-item {
+        margin-left: calc(~'(100% - 3 * 24.439%) / 2');
+        padding: 0;
+        width: 24.439%;
+
+        &:nth-child(3n + 1) {
+            margin-left: 0;
+        }
+    }
+}
