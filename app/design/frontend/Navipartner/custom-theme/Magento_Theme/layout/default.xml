@@ -14,6 +14,7 @@
         <referenceBlock name="form.subscribe" remove="true"/>
         <referenceBlock name="my-account-link" remove="true"/>
         <referenceBlock name="register-link" remove="true"/>
+        <referenceBlock name="advanced-search-link" remove="true"/>
         <referenceContainer name="header.panel">
             <block class="Magento\Framework\View\Element\Template" name="custom-header-panel" template="Magento_Theme::custom-header-panel-text.phtml"/>
         </referenceContainer>
