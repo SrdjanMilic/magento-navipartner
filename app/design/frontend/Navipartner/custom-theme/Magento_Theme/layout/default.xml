@@ -15,6 +15,7 @@
         <referenceBlock name="my-account-link" remove="true"/>
         <referenceBlock name="register-link" remove="true"/>
         <referenceBlock name="advanced-search-link" remove="true"/>
+        <referenceBlock name="category.product.addto" remove="true"/>
         <referenceContainer name="header.panel">
             <block class="Magento\Framework\View\Element\Template" name="custom-header-panel" template="Magento_Theme::custom-header-panel-text.phtml"/>
         </referenceContainer>
