@@ -7,7 +7,7 @@ define([
   $(".slick-slider").slick({
     dots: true,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 4500,
     slidesToShow: 1,
     slidesToScroll: 1,
