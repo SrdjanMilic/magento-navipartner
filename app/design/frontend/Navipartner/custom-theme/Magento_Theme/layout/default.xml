@@ -26,5 +26,6 @@
             </arguments>
         </referenceBlock>
         <move element="navigation.sections" destination="header-wrapper" before='minicart' />
+        <move element="block-search" destination="header-wrapper" after='minicart' />
     </body>
 </page>
